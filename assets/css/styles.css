@@ -35,7 +35,7 @@ footer {
     justify-content: center; 
     height: 100%;
     font-family: 'Nunito', sans-serif;
-    color: darkslategrey;  
+    color: white;  
 }
 
 /*generalized row styling */
@@ -48,7 +48,7 @@ footer {
 /*navbar styling*/
 .navbar{
     display: flex;
-    background-color:  rgba(30, 195, 195, 0.60) !important;
+    background-color:  rgba(30, 145, 160, 0.8) !important;
     border-left:1px solid rgb(75,75,75);
     border-right:1px solid rgb(75,75,75);
     height: 5.5rem;
@@ -58,11 +58,12 @@ footer {
 .navbar-brand {
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
-    color: darkslategrey !important;
+    color: white !important;
 }
 
 .nav-item {
     height:5rem;
+    border:1px solid rgb(75,75,75);
 }
 
 .nav-link{
@@ -86,28 +87,22 @@ footer {
 
 #nav_home {
     background-color: rgb(35, 145, 235);
-    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_repair {
     background-color:rgb(175, 250, 100);
-    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_security{
     background-color: rgb(245, 245, 115);
-    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_about {
     background-color:rgb(250, 190, 75);
-    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_contact{
     background-color:rgb(245, 60, 60);
-    border-left: 1px solid rgb(75,75,75);
-    border-right: 1px solid rgb(75,75,75);
 }
 
 /* carousel styling */
@@ -167,7 +162,8 @@ footer {
 
 /* other content styles */
 .erhContainer{
-    background-color:  rgb(185, 240, 240) !important;
+    background-color: rgba(45,215,245,0.7);
+    /* background-color:  rgb(185, 240, 240) !important; */
     border-left:1px solid rgb(75,75,75);
     border-right:1px solid rgb(75,75,75);
 }
@@ -188,7 +184,7 @@ footer {
 
 #footerContainer{
     height: 3rem;
-    background-color: rgb(30,195,195) !important;
+    background-color: rgb(30,145,160) !important;
 }
 
 
@@ -347,7 +343,7 @@ footer {
     }
 
     .navbar{
-        height: 3rem;
+        height: 4rem;
     }
     
     .navbar-brand {
