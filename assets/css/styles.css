@@ -2,20 +2,21 @@
 
 body{
     font-family: 'Oswald', 'Nunito', sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 a.nav-link.active {   
-   color:rgb(73, 73, 73) !important;
+   color:rgb(50,50,50) !important;
    text-decoration: underline;
 }
 
 a.nav-link.active:hover{
-    color: rgb(95, 98, 100) !important;
+    color: rgb(75,75,75) !important;
     text-decoration: none;
 }
 
 a.nav-link:hover{
+    color: rgb(75,75,75) !important;
     text-decoration: underline;
 }
 
@@ -23,51 +24,45 @@ header {
     display: flex;
     justify-content: center;
     width:100%;
-    height:60vh;
-    margin-top: 6rem;
+    height:83vh;
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    background-color:black;
-    color:white;
+    color: darkslategrey;
 }
 
 footer {
-    display:flex;
+    display: flex;
     justify-content: center; 
-    height:1.5rem;
-    background-color: rgba(10,10,10,0.7);
+    height: 100%;
     font-family: 'Nunito', sans-serif;
-    font-size:.8rem;
-    color: white;  
-    padding-top:3px; 
+    color: darkslategrey;  
 }
 
 /*generalized row styling */
 .row {
     display: flex;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
 
 /*navbar styling*/
 .navbar{
     display: flex;
-    background-color: rgba(10,10,10,0.7);
-    height: 5rem;
-    margin-top:.5rem;
+    background-color:  rgba(30, 195, 195, 0.60) !important;
+    border-left:1px solid rgb(75,75,75);
+    border-right:1px solid rgb(75,75,75);
+    height: 5.5rem;
     margin-bottom:.5rem;
 }
 
 .navbar-brand {
     font-family: 'Nunito', sans-serif;
-    font-size: 2.5rem;
-    color: white !important;
+    font-size: 2rem;
+    color: darkslategrey !important;
 }
 
 .nav-item {
     height:5rem;
-    margin:opx;
-    padding:0px;
 }
 
 .nav-link{
@@ -82,38 +77,44 @@ footer {
     color: black !important;
     padding-left: 1.25rem;
     padding-right: 1.25rem; 
-    border-left: 1px solid rgba(10,10,10,0.7);
 }
 
 .navbar-toggler-icon{
-    border: 1px solid white;
-    color:white;
+    border: 1px solid black !important;
+    color: black;
 }
 
 #nav_home {
-    background-color: rgb(35, 146, 236);
+    background-color: rgb(35, 145, 235);
+    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_repair {
-    background-color:rgb(173, 248, 98);
+    background-color:rgb(175, 250, 100);
+    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_security{
-    background-color: rgb(247, 247, 114);
+    background-color: rgb(245, 245, 115);
+    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_about {
-    background-color:rgb(250, 189, 77);
+    background-color:rgb(250, 190, 75);
+    border-left: 1px solid rgb(75,75,75);
 }
 
 #nav_contact{
-    background-color:rgb(247, 60, 60);
+    background-color:rgb(245, 60, 60);
+    border-left: 1px solid rgb(75,75,75);
+    border-right: 1px solid rgb(75,75,75);
 }
 
 /* carousel styling */
 .carousel{
     width: 100%;
     height: 100%;
+    margin-top: 5.5rem;
 }
 
 .carousel-item{
@@ -123,11 +124,11 @@ footer {
 
 .carousel-item img {
     width:auto;
-    height:60vh;
+    height:68vh;
     display:flex;
     margin-left:auto;
     margin-right:auto;
-    border:1px solid white;
+    border:1px solid rgb(75,75,75) !important;;
 }
 
 #img_carousel_1{
@@ -165,24 +166,31 @@ footer {
 }
 
 /* other content styles */
-section#main_content{
-    color: white;
-    margin-top:1rem;
+.erhContainer{
+    background-color:  rgb(185, 240, 240) !important;
+    border-left:1px solid rgb(75,75,75);
+    border-right:1px solid rgb(75,75,75);
 }
 
-.row .main_heading {
+.row .heading_content {
     font-family: 'Oswald', sans-serif;
-    color: white;
-    text-align:center;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid white;
+    text-align: center;
+    color:  rgb(75,75,75);
 }
 
-#sub_heading {
+#content {
     font-family: 'Nunito', sans-serif;
-    color: white;
-    margin-top:1rem;
+    color: rgb(75,75,75) !important;
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
+
+#footerContainer{
+    height: 3rem;
+    background-color: rgb(30,195,195) !important;
+}
+
 
 /* specific media rules */
 /* screens for desktops and larger*/
