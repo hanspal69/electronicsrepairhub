@@ -3,6 +3,8 @@
 body{
     font-family: 'Oswald', 'Nunito', sans-serif;
     background-color: white;
+    margin:0px;
+    padding:0px;
 }
 
 a.nav-link.active {   
@@ -24,9 +26,8 @@ header {
     display: flex;
     justify-content: center;
     width:100%;
-    height:83vh;
+    height:80vh;
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
     color: darkslategrey;
 }
 
@@ -48,11 +49,11 @@ footer {
 /*navbar styling*/
 .navbar{
     display: flex;
-    background-color:  rgba(30, 145, 160, 0.8) !important;
+    background-color:  rgba(30,30,50,0.8) !important;
+    background-image: url("../img/banner1.jpg");
     border-left:1px solid rgb(75,75,75);
     border-right:1px solid rgb(75,75,75);
-    height: 5.5rem;
-    margin-bottom:.5rem;
+    height: 8rem;
 }
 
 .navbar-brand {
@@ -105,39 +106,6 @@ footer {
     background-color:rgb(245, 60, 60);
 }
 
-/* carousel styling */
-.carousel{
-    width: 100%;
-    height: 100%;
-    margin-top: 5.5rem;
-}
-
-.carousel-item{
-    text-align:center;
-    height:100%;
-}
-
-.carousel-item img {
-    width:auto;
-    height:68vh;
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    border:1px solid rgb(75,75,75) !important;;
-}
-
-#img_carousel_1{
-    content:url("../img/soldering.jpg");
-}
-
-#img_carousel_2{
-    content:url("../img/home1.jpg");
-}
-
-#img_carousel_3{
-    content:url("../img/home2.jpg");
-}
-
 /* card styling*/
 .card-title{
     color: blue;
@@ -162,29 +130,64 @@ footer {
 
 /* other content styles */
 .erhContainer{
-    background-color: rgba(45,215,245,0.7);
-    /* background-color:  rgb(185, 240, 240) !important; */
-    border-left:1px solid rgb(75,75,75);
-    border-right:1px solid rgb(75,75,75);
+    background-color: rgba(45,215,245,0.3);
+    margin:0px;
+    padding:0px;
 }
 
-.row .heading_content {
+#headingContent {
+    display:flex;
     font-family: 'Oswald', sans-serif;
+    align-items: center;
     text-align: center;
-    color:  rgb(75,75,75);
+    color: white;
+    background-color: rgba(75,75,75,0.7);
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom:1rem;
 }
 
-#content {
+#headerImage{
+    display: flex;
+    align-items:flex-end;
+    width:100%;
+    height:100%;
+    margin-top:8rem;
+    background-image: url("../img/home1.jpg");
+    background-size: cover;
+    color:white !important;
+}
+
+#contentRow {
+    display:flex;
+    align-items:center;
+    justify-content: center;
     font-family: 'Nunito', sans-serif;
-    color: rgb(75,75,75) !important;
-    margin-top: .5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-top: 8rem;
+    padding: 2rem;
 }
 
 #footerContainer{
     height: 3rem;
-    background-color: rgb(30,145,160) !important;
+    background-color: rgb(30,30,50) !important;
+    background-image: url("../img/banner1.jpg");
+}
+
+.row hr{
+    border-bottom:2px solid white !important;
+}
+
+#logo {
+    content: url("../img/logo.png");
+    width: 5rem;
+    height: 5rem;
+}
+
+#banner {
+    background-color: rgba(75,75,75,0.7);
+    font-family: 'Dosis', sans-serif;
+    font-size: 3rem;
 }
 
 
