@@ -38,8 +38,8 @@ window.setInterval(()=>{
                         vOp=vOp-0.05;
                     }
                 }  */
-                vOp = 0;
-                id = setInterval(fadeIn,60);   
+                let vOp = 0;
+                id = setInterval(fadeIn,40);   
                 function fadeIn(){
                     if (vOp>1) clearInterval(id);
                     else {
