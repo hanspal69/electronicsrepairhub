@@ -8,18 +8,21 @@ body{
 }
 
 a.nav-link.active {   
-   color:rgb(50,50,50) !important;
+   color:white !important;
    text-decoration: underline;
+   background-color: rgba(45,215,245,0.3);
 }
 
 a.nav-link.active:hover{
-    color: rgb(75,75,75) !important;
+    color: white !important;
     text-decoration: none;
+    background-color:rgba(75,75,75,0.7);
 }
 
 a.nav-link:hover{
-    color: rgb(75,75,75) !important;
+    color: white !important;
     text-decoration: underline;
+    background-color: rgba(75,75,75,0.5);
 }
 
 header {
@@ -36,7 +39,8 @@ footer {
     justify-content: center; 
     height: 100%;
     font-family: 'Nunito', sans-serif;
-    color: white;  
+    color: rgb(45,215,245);  
+    border-top: 1px solid rgb(45,215,245);
 }
 
 /*generalized row styling */
@@ -49,21 +53,19 @@ footer {
 /*navbar styling*/
 .navbar{
     display: flex;
-    background-color:  rgba(30,30,50,0.6) !important;
-    border-left:1px solid rgb(75,75,75);
-    border-right:1px solid rgb(75,75,75);
+    background-color:  rgba(30,30,50,0.75) !important;
     height: 8rem;
+    border-bottom: 1px solid rgb(45,215,245);
 }
 
 .navbar-brand {
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
-    color: white !important;
+    color: rgb(45,215,245) !important;
 }
 
-.nav-item {
-    height:5rem;
-    border:1px solid rgb(75,75,75);
+.nav-item{
+    height: 4rem;
 }
 
 .nav-link{
@@ -74,35 +76,14 @@ footer {
     text-align: center;
     width: auto;
     font-family: 'Nunito', sans-serif;
-    font-weight:bold;
+    font-size:1rem;
+    font-weight: bold;
     color: black !important;
     padding-left: 1.25rem;
     padding-right: 1.25rem; 
-}
-
-.navbar-toggler-icon{
-    border: 1px solid black !important;
-    color: black;
-}
-
-#nav_home {
-    background-color: rgb(35, 145, 235);
-}
-
-#nav_repair {
-    background-color:rgb(175, 250, 100);
-}
-
-#nav_security{
-    background-color: rgb(245, 245, 115);
-}
-
-#nav_about {
-    background-color:rgb(250, 190, 75);
-}
-
-#nav_contact{
-    background-color:rgb(245, 60, 60);
+    height:100%;
+    background-color: rgba(45,215,245,0.5);
+    border: 1px solid rgb(45,215,245);
 }
 
 /* card styling*/
@@ -165,7 +146,7 @@ footer {
 
 /* other content styles */
 .erhContainer{
-    background-color: rgba(30,30,50,0.35);
+    background-color: rgba(30,30,50,0.5);
     margin:0px;
     padding:0px;
 }
@@ -186,10 +167,8 @@ footer {
     font-family: 'Oswald', sans-serif;
     display: flex;
     align-items: center;
-    color: white;
-    background-color: rgba(75,75,75,0.5);
-    border-radius: 5px;
-    border: 1px solid white;
+    color: rgb(45,215,245);
+    background-color: rgba(30,30,50,0.7);
     padding:0.5rem;
 }
 
@@ -198,17 +177,16 @@ footer {
     align-items:center;
     justify-content: center;
     font-family: 'Nunito', sans-serif;
-    color: white;
+    color: rgb(45,215,245);
     padding: 2rem 3rem 2rem 3rem;
 }
 
 #footerContainer{
     height: 3rem;
-    background-color: rgba(30,30,50,0.6) !important;
 }
 
 .row hr{
-    border-bottom:2px solid white !important;
+    border-bottom:1px solid rgb(45,215,245);
 }
 
 #logo {
@@ -217,7 +195,7 @@ footer {
     height: 5rem;
 }
 
-#banner {
+#mastHead {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
 }
