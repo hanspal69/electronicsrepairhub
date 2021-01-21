@@ -5,7 +5,8 @@
 
 
 
-let startImgNo=1; 
+/* var startImgNo=1; 
+var id=null; */
 
 /* check if an element is visible on a page */
 function isVisible (ele) {
@@ -18,7 +19,7 @@ function isVisible (ele) {
 }
 
 
-
+/* 
 window.setInterval(()=>{
     const element = document.getElementById("headerImage");
         if (isVisible(element)){
@@ -29,24 +30,24 @@ window.setInterval(()=>{
             else {
                 element.style.opacity=0;
                 element.style.backgroundImage=`url('assets/img/home${startImgNo}.jpg')`; 
-               /*  var vOp = 1;
-                var id = setInterval(fadeOut,10);   
-                function fadeOut(){
-                    if (vOp<0) clearInterval(id);
-                    else {
-                        element.style.opacity=vOp;
-                        vOp=vOp-0.05;
-                    }
-                }  */
-                let vOp = 0;
+                let ctr = 1;
+                id = setInterval(()=>fadeOut,10);   
                 id = setInterval(fadeIn,40);   
-                function fadeIn(){
-                    if (vOp>1) clearInterval(id);
-                    else {
-                        element.style.opacity=vOp;
-                        vOp=vOp+0.04;
-                    }
-                }  
+                 
             }
         }
 }, 5000);
+
+function fade(type,element){
+    /* get element opacity and do operation */
+    if (type==='in'){
+        if (ctr>1) clearInterval(id);
+    }
+    else
+    {
+        if (ctr<1) clearInterval(id);
+    }
+    element.style.opacity=vOp;
+    ctr=type==='in'?ctr+0.04:ctr-0.04;
+} 
+ */

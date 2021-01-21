@@ -2,8 +2,8 @@
 
 body{
     font-family: 'Dosis', 'Nunito', sans-serif;
-    background-color: white;
     color: rgba(30,30,50,0.9);
+    background-color: white;
     margin:0px;
     padding:0px;
 }
@@ -88,56 +88,20 @@ a.nav-link:hover{
      color: white!important;
 }
 
-/*main styling*/
-
-.oc{
-    margin:0px;
-    padding:0px;
+/* other styling */
+#part2{
+    margin-top:1rem;
+    margin-bottom:4rem;
 }
 
-#p1r1cAc1{
-    background-image: url("../img/image1-1.jpg");
-    background-size: cover;                      
-    background-repeat: no-repeat;
-    background-position: center center; 
-    border:1px solid black;
-}
-
-#p1r1cAc2{
-    background-image: url("../img/image2-1.jpg");
-    background-size: cover;                      
-    background-repeat: no-repeat;
-    background-position: center center; 
-    border:1px solid black;
-}
-
-#p1r2cAc1{
-    background-image: url("../img/camera1-1.jpg");
-    background-size: cover;                      
-    background-repeat: no-repeat;
-    background-position: center center; 
-    border:1px solid black;
-}
-
-#p1r2colB{
-    background-image: url("../img/recorder1-1.jpg");
-    background-size: cover;                      
-    background-repeat: no-repeat;
-    background-position: center center; 
-    border:1px solid black;
-}
-
-.rc{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    margin:0px;
-}
-
-#p2cc{
-    display: flex;
-    align-items: center;
-    }
+/*card styling*/
+ 
+.card {
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding: 1rem;
+    border: 1px solid black;
+} 
 
 /*footer*/
 #footerContainer{
@@ -163,8 +127,8 @@ footer {
 
 /* specific media rules */
 /* screens for desktops and larger*/
-@media (min-width:1367px){
-    
+@media (min-width:1367px)
+{
     h1{
         font-size: 2.5rem;
     }
@@ -179,38 +143,18 @@ footer {
     }
 
     .navbar{
-        top:5rem;
+        top: 5rem;
         height: 2.5rem;
     }
 
     .nav-link{
         font-size:1.1rem;
     }
- 
+
     #part1{
-        margin-top:7.5rem;
-    }
-    
-    .rc{
-        height:16rem;
+        margin-top:10rem;
     }
 
-    #p2cc{
-        height: 12.5rem;
-    }
-
-    #messageBottom{
-        margin-top: 1.5rem;
-    }
-
-    #row1{
-        margin-top: 1rem;
-    }
-    
-    #row2{
-        margin-bottom: 1rem;
-    }
-  
     #footer_phone {
         margin-left: 1rem;
         margin-right: auto;
@@ -228,6 +172,14 @@ footer {
         font-size: 2rem;
     }
 
+    h4{
+        font-size: 1.25rem;
+    }
+
+    h5{
+        font-size: 1.1rem;
+    }
+
     #logo {
         width: 4rem;
         height: 4rem;
@@ -242,12 +194,8 @@ footer {
         height: 2rem;
     }
 
-    h4{
-        font-size: 1.25rem;
-    }
-
-    h5{
-        font-size: 1.1rem;
+    #part1{
+        margin-top:8rem;
     }
 
     #footer_phone {
@@ -258,44 +206,11 @@ footer {
      #copyright{
         float: right;
         margin-right: 1rem;
-    }
-
-    #part1{
-        margin-top:6rem;
-    }
-    .rc{
-        height:11.75rem;
-    }
-
-    #p2cc{
-        height: 11rem;
-    }
-
-    #messageBottom{
-        margin-top:.5rem;
-    }
-
-    #row1{
-        margin-top:.5rem;
-    }
-    
-    #row2{
-        margin-bottom:.5rem;
     }
  }
 
  /* tablet screems wider than 769px in landscape mode - upto laptop screens */
  @media (min-width: 769px) and (max-width: 1024px) {
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
-    }
-
     h1{
         font-size: 2rem;
     }
@@ -329,6 +244,10 @@ footer {
         top:4rem;
         height: 2rem;
     }
+    
+    #part1{
+        margin-top:8rem;
+    }
 
     #footer_phone {
         margin-left: 1rem;
@@ -338,45 +257,11 @@ footer {
      #copyright{
         float: right;
         margin-right: 1rem;
-    }
-
-    #part1{
-        margin-top:6.5rem;
-    }
-    .rc{
-        height:12.5rem;
-    }
-
-    #p2cc{
-        height: 13rem;
-    }
-
-    #messageBottom{
-        margin-top:.5rem;
-    }
-
-    #row1{
-        margin-top:.5rem;
-    }
-    
-    #row2{
-        margin-bottom:.5rem;
     }
  }
 
  /* tablets in portrait mode */
 @media screen and (min-width: 415px) and (max-width: 1024px) and (orientation:portrait){
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        margin-top:.5rem;
-        float: right;
-        margin-right: 1rem;
-    }
-
     h1{
         font-size: 2rem;
     }
@@ -424,46 +309,25 @@ footer {
         border: 1px solid white!important;
     }
 
+    #part1{
+        margin-top:10rem;
+        margin-bottom:1rem;
+    }
+    
     #footer_phone {
         margin-left: 1rem;
         margin-right: auto;
      }
      
      #copyright{
+        margin-top:.5rem;
         float: right;
         margin-right: 1rem;
-    }
-
-    #part1{
-        margin-top:10rem;
-    }
-    .rc{
-        height:16rem;
-    }
-
-    #p2cc{
-        height: 18rem;
-    }
-
-    #messageBottom{
-        margin-top:.5rem;
-    }
-
-    #row1{
-        margin-top:.5rem;
-    }
-    
-    #row2{
-        margin-bottom:.5rem;
     }
 }
  
 /* phones in landscape mode*/
 @media screen and (min-width: 321px) and (max-width:869px) and (max-height:414px) and (orientation:landscape){
-    #footer_phone, #copyright{
-        display:flex;
-        justify-content: center;
-     }
      h1{
         font-size: 2rem;
     }
@@ -511,61 +375,19 @@ footer {
         border: 1px solid white!important;
     }
 
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
-    }
-
     #part1{
-        margin-top:8rem;
+        margin-top:10rem;
+        margin-bottom:1rem;
     }
 
-    .rc{
-        height:16rem;
-    }
-
-    #p1r2cAc2{
-        margin-top:1rem;
-    }
-
-    div#p1r1colB.rc{
-        height:6rem;
-    }
-
-    div#p1r2cAc2.rc{
-        height:6rem;
-    }
-
-    #p2cc{
-        margin-top:0.5rem;
-        margin-bottom: 3rem;
-    }
-
-    #messageBottom{
-        margin-top:.5rem;
-    }
-
-    #row1{
-        margin-top:.5rem;
-    }
-    
-    #row2{
-        margin-bottom:.5rem;
-    }
+    #footer_phone, #copyright{
+        display:flex;
+        justify-content: center;
+     }
 }
 
 /* phones in portrait mode*/
 @media screen and (min-width:320px) and (max-width:414px) and (orientation:portrait){
-
-   #footer_phone, #copyright{
-       display: flex;
-       justify-content: center;
-    }
     h1{
         font-size: 1.5rem;
     }
@@ -613,52 +435,13 @@ footer {
         border: 1px solid white!important;
     }
 
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
-    }
-
     #part1{
-        margin-top:8rem;
+        margin-top:9.5rem;
+        margin-bottom:0.5rem;
     }
 
-    #p1r2cAc2{
-        margin-top:1rem;
-    }
-
-    .rc{
-        height:14rem;
-    }
-
-    div#p1r1colB.rc{
-        height:8rem;
-    }
-
-    div#p1r2cAc2.rc{
-        height:8rem;
-    }
-
-    #p2cc{
-        margin-top:1rem;
-        margin-bottom: 3rem;
-    }
-
-    #messageBottom{
-        margin-top:.5rem;
-    }
-
-    #row1{
-        margin-top:.5rem;
-    }
-    
-    #row2{
-        margin-bottom:.5rem;
-    }
-
-   
+   #footer_phone, #copyright{
+    display: flex;
+    justify-content: center;
+   }
 }
