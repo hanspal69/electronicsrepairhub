@@ -463,8 +463,9 @@ footer {
     }
 
     #mapFrame{
-        width:17rem;
-        height:17rem;
+        width:16.75rem;
+        height:16.75rem;
+        margin-bottom:1rem;
     }
 
    #footer_phone, #copyright{
