@@ -458,15 +458,16 @@ footer {
     }
 
     #p2l2r1{
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
         padding:0rem;
     }
 
     #mapFrame{
-        width:16.75rem;
-        height:16.75rem;
-        margin-bottom:1rem;
+        width:15.5rem;
+        height:20rem;
+        margin-bottom:0.5rem;
     }
+
 
    #footer_phone, #copyright{
     display: flex;
