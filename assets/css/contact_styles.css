@@ -101,16 +101,38 @@ a.nav-link:hover{
 }
 
 footer {
-    margin:0px; 
-    padding:0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     height: 100%;
-    background-color: rgba(30,30,50,0.7);
+    background-color: rgba(30, 30, 50, 0.7);
     font-family: 'Nunito', sans-serif;
-    color: white;  
-    border-top: 1px solid rgb(45,215,245);
+    color: white;
+    border-top: 1px solid black;
+}
+
+#footer_phone {
+    display: flex;
+    justify-content: left;
+    margin:0px;
+    padding:0px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: right;
+    margin:0px;
+    padding:0px;
+}
+
+#company{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+}
+
+#mobile{
+    margin-left:1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*specific to this page*/
@@ -160,16 +182,6 @@ footer {
         margin-top:11rem;
     }
     
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
-    }
-
     #mapFrame{
         width: 45rem;
         height:30rem;
@@ -206,16 +218,6 @@ footer {
 
     #part1{
         margin-top:8rem;
-    }
-
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
     }
  }
 
@@ -259,15 +261,7 @@ footer {
         margin-top:10rem;
     }
 
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        float: right;
-        margin-right: 1rem;
-    }
+     /*specific styles */
 
     #mapFrame{
         width:20rem;
@@ -329,16 +323,8 @@ footer {
         margin-bottom:1rem;
     }
 
-    #footer_phone {
-        margin-left: 1rem;
-        margin-right: auto;
-     }
-     
-     #copyright{
-        margin-top:.5rem;
-        float: right;
-        margin-right: 1rem;
-    }
+    /*specific styles */
+
     #mapFrame{
         width: 20rem;
         height:20rem;
@@ -410,7 +396,6 @@ footer {
     }
 
     #footer_phone, #copyright{
-        display:flex;
         justify-content: center;
      }
 
@@ -483,7 +468,6 @@ footer {
     }
 
    #footer_phone, #copyright{
-    display: flex;
     justify-content: center;
    }
 

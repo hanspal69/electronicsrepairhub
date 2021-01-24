@@ -130,8 +130,8 @@ export const equipData=[
     "4MP IP IR(10m) fixed focal length 2.5mm corner camera"
  ],   
     ListDescription:"Types Avaialable:", 
-    Description:" Dome cameras can be fixed to a ledge or ceiling. The camera is housed in a dome made of a" + 
-    "clear and tough plastic which offers protection against the elemental or intentional damage" 
+    Description:" Dome cameras can be fixed to a ledge or ceiling. The camera is housed in a dome made of " + 
+    "tough plastic which offers protection against the elements or intentional damage" 
 },
 {
     ID: 2,
@@ -148,7 +148,7 @@ export const equipData=[
  ],   
     ListDescription:"Types Avaialable:", 
     Description:"Bullet cameras are directional cameras fixed high on a wall. They point in a specific direction and angle." +
-    "The camera is housed in a dome made of a tough plastic case which offers protection against the elemental or intentional damage"
+    "The camera is housed in a tough plastic case which offers protection against the elements or intentional damage"
 },
 {
     ID: 3,
@@ -164,8 +164,8 @@ export const equipData=[
     "4MP IP IR(10m) fixed focal length 2.5mm corner camera"
  ],   
     ListDescription:"Types Avaialable:", 
-    Description:"Turret cameras look like domes and are fixed to a ledge or ceiling. The camera can be pointed in a specific direction and angle." + 
-    "They offer lesser protection against the elemental or intentional damage than dome cameras."
+    Description:"Turret cameras can be fixed to a ledge or ceiling. The camera is usually pointed in a specific direction and angle." + 
+    "These cameras have lesser protection than dome cameras against the elements or intentional damage ."
 },
 {
     ID: 4,
@@ -175,9 +175,9 @@ export const equipData=[
     ListPoints:["8 port IP/HDVCI recorder for use with upto 8 security cameras", "16 port IP?HDCVI recorders for use upto 16 cameras"
  ],   
     ListDescription:"Models available:", 
-    Description:"Network Video recorders record the video captured by the cameras. They also provide power to the cameras. Modern"+
-    "Network Video recorders also make the video recordings and live feeds available for monitoring on the internet. They can also be set" +
-    "up to act as intrusion alarms and face recognition systems."
+    Description:"Network Video recorders record the video captured by the cameras. They also provide power to the cameras and can make the video recordings " + 
+    "and live feeds available for monitoring on the internet. They can also be set up to act as intrusion alarms. " +
+    "Recording capacity depends upon the installed storage capacity which can be installed or increased per need."
 },
 ];
 
