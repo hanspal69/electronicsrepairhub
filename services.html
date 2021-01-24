@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./assets/css/services_styles.css" />
 </head>
-<body onload=main()>
+<body>
     <div id="mastHead" class="container-fluid fixed-top">
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center"> 
                 <a class="mainLink" href="index.html">  
                     <div id="bannerMastHead">
-                        <img class="img-fluid" src="./assets/img/logo_blue.png" id="logo" />
+                        <img class="img-fluid" src="./assets/img/logo.png" id="logo" />
                    <h1> ELECTRONICS REPAIR HUB </h1> 
                     </div>
                 </a> 
@@ -74,11 +74,25 @@
             </section>
             <!--message section-->
             <section id="part2">
+                <div id="cardModal" class="modal fade" tabindex="-1" role="dialog" 
+                aria-labelledby="taskModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <!-- Modal Contents -->
+                    <div class="modal-content" id="cardModalContent">
+                        <!-- the .setContent() method will update this element's HTML -->
+                    </div>
+                </div>
+            </div>
                 <div class="row">
                     <div class="d-none d-md-block col-md-1 col-lg-2"></div>
                     <div class="col-12 col-md-10 col-lg-8">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 d-flex align-items-center">
+                                <h4> We repair a wide range of electronic devices. Please tap or click on a card below to find out more about the type of repairs we can do. </h4>
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="card-deck"></div>
+                            <div class="card-deck" id="cardDeck"></div>
                         </div>
                     </div>
                     <div class="d-none d-md-block col-md-1 col-lg-2"></div>
@@ -98,8 +112,8 @@
     </div>
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.0/dist/bootstrap-native.min.js"></script>
-    <script src="./assets/js/data.js"> </script> 
-    <script src="./assets/js/servicesScript.js"> </script> 
+    <script type="module" src="./assets/js/data.js"> </script> 
+    <script type="module" src="./assets/js/servicesScript.js"> </script> 
   
 </body>
 </html>

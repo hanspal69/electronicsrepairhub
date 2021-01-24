@@ -158,3 +158,9 @@ div.absolute {
   width: 50%;
   border: 3px solid #8AC007;
 }
+
+"Avialable in 4MP, 5MP, 6MP & 8MP"+
+                "resolution with fixed focal lengths or variable(motorised) focal lengths. Two network formats are avaialble: IP (on Ethernet)" +
+                "or HDCVI (high definition composite video interface on coaxial). Cameras can have IR infrared light source for use at night." + 
+                "Number in brackets are the range of the IR light transmitted." + 
+                "Starlight Cameras are cameras which have special sensors, which provide improved night vision in low light conditions."

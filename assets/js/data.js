@@ -1,9 +1,9 @@
-const servicesData=[
+export const servicesData=[
     {
         ID: 1,
         ImageFileName: "mobile",
         ImageAltText:"Mobile phone",
-        Title:"Mobile Phones <br/> Android, Apple iPhone",
+        Title:"Mobile Phones, Android or iPhone",
         ListPoints:["Dead, cracked & broken screen replacements.","Faulty power & USB sockets repair or replacements.",
                     "Battery replacements.","Shell/Case replacements.","Mainboard  component level repair.",
                     "Android/OS reloading."," Data backup & restoration."],
@@ -14,7 +14,7 @@ const servicesData=[
         ID: 2,
         ImageFileName: "tablet",
         ImageAltText:"Tablet",
-        Title: " Tablets <br> Android Tablets, Apple iPad ",
+        Title: "Android or iOS (iPads) Tablets",
         ListPoints:["Dead, cracked & broken screen replacements.","Faulty power & USB sockets repair or replacements.",
                     "Battery replacements.","Shell/Case replacements.","Mainboard  component level repair.",
                     "Android/OS reloading."," Data backup & restoration."],
@@ -25,7 +25,7 @@ const servicesData=[
         ID: 3,
         ImageFileName: "laptops",
         ImageAltText:"Laptop",
-        Title: "Laptops, Notebooks <br> Apple Macbook",
+        Title: "Laptops, Notebooks, Apple Macbook",
         ListPoints:["Screen repair or replacement.","Digitizer/Touchscreen replacement.","Hard Disk or Memory upgrades.",
                     "Faulty power, USB, Thunderbolt sockets repair or replacements.","Battery replacements.",
                     "Shell/Case repairs & replacements.","Mainboard component level repair.",
@@ -38,7 +38,7 @@ const servicesData=[
         ID: 4,
         ImageFileName: "desktop",
         ImageAltText:"Personal Computer",
-        Title: "Desktops, All-in-ones <br> Servers",
+        Title: "Desktops, All-in-ones, Servers",
         ListPoints:["Power supply repair or replacements.",
                     "Case repairs or replacements.",
                     "Memory module, network card, graphics card fault finding and replacements or upgrades.",
@@ -55,7 +55,7 @@ const servicesData=[
         ID: 5,
         ImageFileName: "printer1",
         ImageAltText:"Printer",
-        Title: "Scanners, Printers <br> Multi Function Devices",
+        Title: "Scanners, Printers, Multi Function Devices",
         ListPoints:["Power supply repair or replacements.",
                     "Dot Matrix: Missing pins or print, head alignment errors, paper feed errors.",
                     "Thermal: Faded or missing print, paper feed errors.",
@@ -68,7 +68,7 @@ const servicesData=[
         ID: 6,
         ImageFileName: "pcb",
         ImageAltText:"Printed Circuit Board",
-        Title: "Repair of <br> Other Electronic Devices ",
+        Title: "Other Electronic Devices",
         ListPoints:[],
         ListDescription:null,
         Description:"We can also repair other electronic devices like special monitors, power supplies, "+ 
@@ -80,7 +80,7 @@ const servicesData=[
         ID: 7,
         ImageFileName: "network",
         ImageAltText:"Router and ethernet cable",
-        Title: "Networking",
+        Title: "Wifi or Ethernet Networks",
         ListPoints:[
         "Installation or fault finding and repair of Wifi networks. We can install Wifi meshes to cover home "
         +"or small business premises.",
@@ -94,7 +94,7 @@ const servicesData=[
         ID: 8,
         ImageFileName: "os",
         ImageAltText:"Linux startup screen",
-        Title: "Data Backup & OS Repair",
+        Title: "OS Repair and Data backup & recovery",
         ListPoints:["Virus scanning and malware removal.",
                     "Repair of Windows 7/8/10 OS (where feasible).",
                     "Data backup & restoration.",
@@ -115,5 +115,69 @@ const servicesData=[
     }
 ];
 
-const equipmentData=[];
+export const equipData=[     
+{
+    ID: 1,
+    ImageFileName: "dome",
+    ImageAltText:"Dome Cameras",
+    Title:"Dahua Dome Cameras",
+    ListPoints:["8 MP IP Lite IR fixed-focal length", "8MP IP IR(30m) Starlight fixed focal length options of 2.8mm/4mm/6mm",
+    "8 MP IP IR - Variable (motorised) focal length 2.7-13.5mm/3.7-11mm",
+    "8 MP HDCVI IR Starlight variable (motorised) focal length 3.7-11mm", 
+    "6MP IP IR(50m) variable focal length 2.7-13.5mm (motorised)",
+    "5MP HDCVI IR(30m) Starlight 2.8/3.6mm fixed focal length or variable (motorised) focal length 2.7-13.5mm ",
+    "4MP IP IR(20m) fixed focal length 2.8mm", " 4MP IP IR(40m) Starlight IP variable (motorised) focal length 2.7~13.5mm", 
+    "4MP IP IR(10m) fixed focal length 2.5mm corner camera"
+ ],   
+    ListDescription:"Types Avaialable:", 
+    Description:" Dome cameras can be fixed to a ledge or ceiling. The camera is housed in a dome made of a" + 
+    "clear and tough plastic which offers protection against the elemental or intentional damage" 
+},
+{
+    ID: 2,
+    ImageFileName: "bullet",
+    ImageAltText:"Bullet Cameras",
+    Title:"Dahua Bullet Cameras",
+    ListPoints:["8 MP IP Lite IR fixed-focal length", "8MP IP IR(30m) Starlight fixed focal length options of 2.8mm/4mm/6mm",
+    "8 MP IP IR - Variable (motorised) focal length 2.7-13.5mm/3.7-11mm",
+    "8 MP HDCVI IR Starlight variable (motorised) focal length 3.7-11mm", 
+    "6MP IP IR(50m) variable focal length 2.7-13.5mm (motorised)",
+    "5MP HDCVI IR(30m) Starlight 2.8/3.6mm fixed focal length or variable (motorised) focal length 2.7-13.5mm ",
+    "4MP IP IR(20m) fixed focal length 2.8mm", " 4MP IP IR(40m) Starlight IP variable (motorised) focal length 2.7~13.5mm", 
+    "4MP IP IR(10m) fixed focal length 2.5mm corner camera"
+ ],   
+    ListDescription:"Types Avaialable:", 
+    Description:"Bullet cameras are directional cameras fixed high on a wall. They point in a specific direction and angle." +
+    "The camera is housed in a dome made of a tough plastic case which offers protection against the elemental or intentional damage"
+},
+{
+    ID: 3,
+    ImageFileName: "turret",
+    ImageAltText:"Turret Cameras",
+    Title:"Dahua Turret Cameras",
+    ListPoints:["8 MP IP Lite IR fixed-focal length", "8MP IP IR(30m) Starlight fixed focal length options of 2.8mm/4mm/6mm",
+    "8 MP IP IR - Variable (motorised) focal length 2.7-13.5mm/3.7-11mm",
+    "8 MP HDCVI IR Starlight variable (motorised) focal length 3.7-11mm", 
+    "6MP IP IR(50m) variable focal length 2.7-13.5mm (motorised)",
+    "5MP HDCVI IR(30m) Starlight 2.8/3.6mm fixed focal length or variable (motorised) focal length 2.7-13.5mm ",
+    "4MP IP IR(20m) fixed focal length 2.8mm", " 4MP IP IR(40m) Starlight IP variable (motorised) focal length 2.7~13.5mm", 
+    "4MP IP IR(10m) fixed focal length 2.5mm corner camera"
+ ],   
+    ListDescription:"Types Avaialable:", 
+    Description:"Turret cameras look like domes and are fixed to a ledge or ceiling. The camera can be pointed in a specific direction and angle." + 
+    "They offer lesser protection against the elemental or intentional damage than dome cameras."
+},
+{
+    ID: 4,
+    ImageFileName: "recorder",
+    ImageAltText:"Netwrok Recorders",
+    Title:"Dahua Network Video Recorders (NVR)",
+    ListPoints:["8 port IP/HDVCI recorder for use with upto 8 security cameras", "16 port IP?HDCVI recorders for use upto 16 cameras"
+ ],   
+    ListDescription:"Models available:", 
+    Description:"Network Video recorders record the video captured by the cameras. They also provide power to the cameras. Modern"+
+    "Network Video recorders also make the video recordings and live feeds available for monitoring on the internet. They can also be set" +
+    "up to act as intrusion alarms and face recognition systems."
+},
+];
 

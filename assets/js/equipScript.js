@@ -1,4 +1,4 @@
-import {servicesData} from './data.js';
+import {equipData} from './data.js';
 
 /* check if an element is visible on a page */
 
@@ -11,22 +11,11 @@ function isVisible (ele) {
     style.visibility!== 'hidden');
 }
 
-//Finds y value of given object
-function findPos(obj) {
-    var curtop = 0;
-    if (obj.offsetParent) {
-        do {
-            curtop += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-    return curtop;
-    }
-}
-
 window.addEventListener('DOMContentLoaded', () => {
     /* get the card-deck element*/
     const cardDeck=document.getElementById("cardDeck");
-    /* add a card for each element in the servicesData array */
-    servicesData.forEach(ele=>{
+    /* add a card for each element in the equipData array */
+    equipData.forEach(ele=>{
         cardDeck.insertAdjacentHTML('beforeend', setCardContent(ele));
         //add a bootstrapcollapse remember to add data-parent="#cardDeck" data-toggle="collapse" to implement BSN collapse
         //new BSN.Collapse(`#cardLink${ele.ID}`);
@@ -57,9 +46,6 @@ window.addEventListener('DOMContentLoaded', () => {
             updateModalBody(currentCardId);
             /* add appropriate classes to modal elements */
             document.querySelector('#modalBodyContentCol').classList.add("col-12");
-            document.querySelector('#timesCloseButton').classList.add('d-none');
-            document.querySelector('#closeButton').classList.remove('d-none');
-            document.querySelector('.modal-footer').classList.add('d-none');
             /* show modal */
             cardModalInstance.toggle();
         }
@@ -89,76 +75,72 @@ window.addEventListener('DOMContentLoaded', () => {
      //sub-function: update modal body with task details and set up a "mark as done" button
      const updateModalBody = id => {
         //get the content associated with the currently selected card and send it to the modal content setting function
-        const ele = servicesData.filter(element=>element["ID"]===id)[0];
+        const ele = equipData.filter(element=>element["ID"]===id)[0];
         cardModalInstance.setContent(setModalContent(ele));
     }; //end sub-function --- updateModalBody 
 });
 
 function setModalContent(ele){
     //variables and constants used for modal 
+    //prepare header
     const modalHeader = 
-        `<!-- Modal Header -->
-        <div class="modal-header">
-            <h2 class="w-100 modal-title text-center">${ele.Title}</h2>
-            <span id="timesCloseButton">
+    `<!-- Modal Header -->
+    <div class="modal-header">
+        <h2 class="modal-title">${ele.Title}</h2>
+        <span id="timesCloseButton">
             <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
-            </span>
-            <span class="d-none" id="closeButton">
-            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="close">Close</button>
-            </span>
-        </div>`;
-        const modalFooter = 
-        `<!-- Modal Footer -->
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="close">Close</button>
-        </div>`;
-        const modalBody1=`<!-- Modal Body -->
-        <div class="modal-body">
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="d-flex align-items-center justify-content-center" id="modalBodyImageCol">
-                    <img class="img-fluid modalImage" src="./assets/img/${ele.ImageFileName}.jpg" alt="${ele.ImageAltText}">
-                </div>
-                <div class="d-flex justify-content-center" id="modalBodyContentCol">`;
-        const modalBody2= 
-        (ele.ListDescription!=null) ?
-            `<div class="col-12" id="modalBodyContentColListHeading">
-                <h4> ${ele.ListDescription} <h4>
+        </span>
+    </div>`;
+    //prepare footer
+    const modalFooter = 
+    `<!-- Modal Footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="close">Close</button>
+    </div>`;
+    //prepare description 
+    //if ele.Description is not null add this description here
+    const  modalBody4= 
+    (ele.Description!=null)?
+    `<div class="col-12 d-flex justify-content-center align-items-center" id="modalBodyContentColDesc">
+        <h4> ${ele.Description} </h4>
+    </div>` 
+    :"";
+    const modalBody1=`<!-- Modal Body -->
+    <div class="modal-body">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center">` + modalBody4 +
+            `<div class="d-flex align-items-center justify-content-center" id="modalBodyImageCol">
+                <img class="img-fluid modalImage" src="./assets/img/${ele.ImageFileName}.jpg" alt="${ele.ImageAltText}">
             </div>
-            `   
-        :"";
-         //get array of list items/points
-        const liItems=ele.ListPoints;
-        //prepare the list 
-        let modalBody3="";
-        if (liItems.length!==0) {
-            liItems.forEach(element=>modalBody3+=`<li>${element}</li>`);
-            modalBody3=
-            `<div class="row w-100">` + modalBody2 +
-                `<div class="col-12" id="modalBodyContentColList">
-                    <ul> ${modalBody3}  </ul>
-                </div>
-            </div>`; 
-        }
-        //if ele.Description is not null add this description here
-        const  modalBody4= 
-        (ele.Description!=null)?
-        `<div class="row d-flex align-items-center">
-            <div class="col-12 d-flex justify-content-center align-items-center" id="modalBodyContentColDesc">
-                ${ele.Description}
+            <div class="d-flex justify-content-center" id="modalBodyContentCol">`;
+    const modalBody2= 
+    (ele.ListDescription!=null) ?
+    `<div class="col-12" id="modalBodyContentColListHeading">
+        <h4> ${ele.ListDescription} <h4>
+    </div>`
+    :"";
+    //get array of list items/points
+    const liItems=ele.ListPoints;
+    //prepare the list 
+    let modalBody3="";
+    if (liItems.length!==0) {
+        liItems.forEach(element=>modalBody3+=`<li>${element}</li>`);
+        modalBody3=
+        `<div class="row w-100">` + modalBody2 +
+            `<div class="col-12" id="modalBodyContentColList">
+                <ul> ${modalBody3}  </ul>
             </div>
-        </div>` 
-        :"";
-        const modalBody5=`</div> </div> </div> </div>`;
-        
-        const modalBody=modalBody1+modalBody3+modalBody4+modalBody5;
-        return(modalHeader+modalBody+modalFooter);
+        </div>`; 
+    }
+    const modalBody5=`</div> </div> </div> </div>`;
+    const modalBody=modalBody1+modalBody3+modalBody5;
+    return(modalHeader+modalBody+modalFooter);
 }
 
 function setCardContent(ele){
     //prepare cardHtml starting code
     const cardHtmlPart1 = `
-    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+    <div class="col-12 col-sm-6 d-flex justify-content-center">
         <div class="card" id="${ele.ID}">
             <img class="card-img-top" src="./assets/img/${ele.ImageFileName}.jpg" alt="${ele.ImageAltText}">
             <div class="card-body">
@@ -199,21 +181,3 @@ function setCardContent(ele){
 
     return(cardHtml);
 }
-
-// function to initialise a modal which will allow a task to be modified
-const initModal=()=>{
-    //check if modal body exists - if so delete it 
-    if (document.querySelector(".modal-header")!=null){
-        const modalBody = document.querySelector(".modal-header").parentElement;
-        modalBody.removeChild(document.querySelector(".modal-header"));
-        modalBody.removeChild(document.querySelector(".modal-body"));
-        modalBody.removeChild(document.querySelector(".modal-footer"));
-        document.querySelector("#taskTable").removeEventListener("click",tableClickHandler);
-    }
-     // add an event listener for double clicks on the list of tasks
-     document.querySelector("#taskTable").addEventListener("click",tableClickHandler);
-}//end initModal()
-
-
-
-                    

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/equip_styles.css" />
 </head>
 <body>
     <div id="mastHead" class="container-fluid fixed-top">
@@ -18,7 +18,7 @@
             <div class="col-12 d-flex justify-content-center align-items-center"> 
                 <a class="mainLink" href="index.html">  
                     <div id="bannerMastHead">
-                        <img class="img-fluid" src="./assets/img/logo_blue.png" id="logo" />
+                        <img class="img-fluid" src="./assets/img/logo.png" id="logo" />
                    <h1> ELECTRONICS REPAIR HUB </h1> 
                     </div>
                 </a> 
@@ -81,12 +81,33 @@
         </section>
         <!--message section-->
         <section id="part2">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="d-none d-md-block col-md-1"></div>
-                <div class="col-12 col-md-10 text-center">
-                    UNDER CONSTRUCTION
+            <div id="cardModal" class="modal fade" tabindex="-1" role="dialog" 
+            aria-labelledby="taskModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                <!-- Modal Contents -->
+                <div class="modal-content" id="cardModalContent">
+                    <!-- the .setContent() method will update this element's HTML -->
                 </div>
-                <div class="d-none d-md-block col-md-1"></div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="d-none d-md-block col-md-1 col-lg-2"></div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <h4> We sell and install Dahua security cameras & recorders. Avialable in 4MP, 5MP, 6MP & 8MP 
+                                resolution with fixed focal lengths or variable (motorised) focal lengths. Two network formats are avaialble: IP (on Ethernet)
+                                or HDCVI (high definition composite video interface on coaxial). Cameras can have IR infrared light source for use at night and 
+                                the number in brackets next to the abbreviation IR is the range of the IR light transmitted and hence the range of the camera 
+                                at night. Starlight Cameras are cameras which have special sensors, which provide improved night vision in low light conditions.
+                                Please tap or click on a card below to find out more about the type of cameras that we offer. </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card-deck" id="cardDeck"></div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-1 col-lg-2"></div>
             </div>
         </section>
         </div>
@@ -103,6 +124,8 @@
     </div>
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.0/dist/bootstrap-native.min.js"></script>
-    <!-- <script src="./assets/js/script.js"> </script> -->
+    <script type="module" src="./assets/js/data.js"> </script> 
+    <script type="module" src="./assets/js/equipScript.js"> </script> 
+  
 </body>
 </html>

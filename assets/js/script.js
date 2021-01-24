@@ -51,3 +51,26 @@ function fade(type,element){
     ctr=type==='in'?ctr+0.04:ctr-0.04;
 } 
  */
+
+
+ /* scrap */
+   /* add an event listener that will close all open cards */
+   document.querySelector('.card-deck').addEventListener('shown.bs.collapse', e=> {
+    /* get current clicked card */
+    const currentCard = e.target.closest('.card');
+    /* process all cards*/
+    currentCard.parentElement.parentElement.querySelectorAll('.card').forEach(e=> {
+        /* process all cards*/
+        if (e!==currentCard){
+            /* check if not current card */
+            const currentCardText = e.querySelector('.card-body').querySelector('.card-text');
+            if (isVisible(currentCardText)) {
+                /* check if card-text is open, if so hide it - use bootstrap jquery*/
+                //$(`#${currentCardText.id}`).collapse('hide');
+                console.log("visible");
+                console.log(currentCardText);
+            }
+        }
+    });
+}
+

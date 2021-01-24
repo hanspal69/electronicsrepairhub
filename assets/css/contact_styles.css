@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Dosis', 'Nunito', sans-serif;
-    color: rgba(30,30,50,0.9);
+    color: rgba(30,30,50,0.8);
     background-color: white;
     margin:0px;
     padding:0px;
@@ -33,12 +33,12 @@ h1{
     align-items: center;
     justify-content: center;
     font-family: 'Dosis', sans-serif;
-    color: rgba(30,30,50,0.7);
+    color: rgba(30,30,50,0.8);
 }
 
 a.mainLink{
     height:100%;
-    color: rgba(30,30,50,0.7);
+    color: rgba(30,30,50,0.8);
 }
 
 a.mainLink:hover{
@@ -52,9 +52,9 @@ a.mainLink:hover{
 /*navigation bar*/
 .navbar{
     display: flex;
-    background-color:  rgba(30,30,50,0.7);
-    border-top: 1px solid rgb(45,215,245);
-    border-bottom: 1px solid rgb(45,215,245);
+    background-color:  rgba(30,30,50,0.8);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     align-items: center;
     padding:0rem;
 }
@@ -72,7 +72,7 @@ a.mainLink:hover{
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    color:rgb(45,215,245)!important;
+    color:white!important;
     padding-left: 1.25rem;
     padding-right: 1.25rem; 
     height:100%;
@@ -88,7 +88,7 @@ a.nav-link.active:hover{
 }
  
 a.nav-link:hover{
-     color: white!important;
+     color:lightskyblue!important;
 }
 
 /*footer*/
@@ -116,7 +116,7 @@ footer {
 /*specific to this page*/
 
 #mapFrame{
-    width:20rem;
+    width: 35rem;
     height:20rem;
 }
 
@@ -132,7 +132,7 @@ footer {
 
 /* specific media rules */
 /* screens for desktops and larger*/
-@media (min-width:1367px)
+@media (min-width:1367.01px)
 {
     h1{
         font-size: 2.5rem;
@@ -169,10 +169,15 @@ footer {
         float: right;
         margin-right: 1rem;
     }
+
+    #mapFrame{
+        width: 45rem;
+        height:30rem;
+    }
  }
 
  /* screens for laptops upto desktops*/
- @media (min-width:1024px) and (max-width:1366.98px){
+ @media (min-width:1024.01px) and (max-width:1367px){
     h1{
         font-size: 2rem;
     }
@@ -215,7 +220,7 @@ footer {
  }
 
  /* tablet screems wider than 769px in landscape mode - upto laptop screens */
- @media (min-width: 769px) and (max-width: 1023.98px) {
+ @media (min-width: 769px) and (max-width: 1024px) {
     h1{
         font-size: 2rem;
     }
@@ -263,10 +268,15 @@ footer {
         float: right;
         margin-right: 1rem;
     }
+
+    #mapFrame{
+        width:20rem;
+        height:20rem;
+    }
  }
 
  /* tablets in portrait mode */
-@media screen and (min-width: 415px) and (max-width: 1023.98px) and (orientation:portrait){
+@media screen and (min-width: 414.01px) and (max-width: 1024px) and (orientation:portrait){
     h1{
         font-size: 2rem;
     }
@@ -328,6 +338,10 @@ footer {
         margin-top:.5rem;
         float: right;
         margin-right: 1rem;
+    }
+    #mapFrame{
+        width: 20rem;
+        height:20rem;
     }
 }
  
@@ -402,8 +416,8 @@ footer {
 
     /* specific to this page */
     #mapFrame{
-        width:350px;
-        height:250px;
+        width:360px;
+        height:180px;
         margin-bottom:.5rem;
     }
 
@@ -414,7 +428,7 @@ footer {
 }
 
 /* phones in portrait mode*/
-@media screen and (min-width:320px) and (max-width:413.98px) and (orientation:portrait){
+@media screen and (min-width:320px) and (max-width:414px) and (orientation:portrait){
     h1{
         font-size: 1.3rem;
     }
