@@ -1,5 +1,6 @@
 /* element styling*/
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -12,7 +13,8 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-family: 'stcaiyunregular', sans-serif;
+    font-size: 3rem;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -38,15 +40,17 @@ h5 {
     padding: 0px;
 }
 
+
 /*mast head*/
+
 #mastHead {
     position: fixed;
     z-index: 2;
     background-color: white;
-    height: 4rem;
+    height: 6rem;
 }
 
-#mastHeadCol{
+#mastHeadCol {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,19 +75,21 @@ a.mainLink:hover {
 }
 
 #logo {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
+
 /*navigation bar*/
+
 .navbar {
     display: flex;
-    background-color: rgba(30,30,50,0.8);
+    background-color: rgba(30, 30, 50, 0.8);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     align-items: center;
     padding: 0rem;
-    top: 4rem;
+    top: 6rem;
     height: 2rem;
 }
 
@@ -120,12 +126,16 @@ a.nav-link:hover {
     color: lightskyblue !important;
 }
 
+
 /*central sections */
-#part1{
-    margin-top: 7.5rem;
+
+#part1 {
+    margin-top: 9.5rem;
 }
 
+
 /*footer*/
+
 #footerContainer {
     height: 2.5rem;
     margin: 0px;
@@ -137,7 +147,7 @@ a.nav-link:hover {
 footer {
     display: block;
     height: 100%;
-    background-color: rgba(30,30,50,0.8);
+    background-color: rgba(30, 30, 50, 0.8);
     font-family: 'Nunito', sans-serif;
     color: white;
     border-top: 1px solid black;
@@ -146,300 +156,309 @@ footer {
 #footer_phone {
     display: flex;
     justify-content: flex-start;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #copyright {
     display: flex;
     justify-content: flex-end;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
-#company{
+#company {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1rem;
 }
 
-#mobile{
-    margin-left:1rem;
+#mobile {
+    margin-left: 1rem;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+
 /*specific to this page*/
-#p2l2r1{
-    margin-top:2rem;
+
+#p2l2r1 {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-#add, #phone, #opening {
+#add,
+#phone,
+#opening {
     color: black;
     text-decoration: underline;
 }
 
-/* specific media rules */
-/* screens for desktops and larger*/
-@media (min-width:1367px)
-{
-    /*specific to this page */
-    #mapFrame{
-        width: 45rem;
-        height:30rem;
-    }
- }
 
- /* screens for laptops upto desktops*/
- @media (min-width:1024px) and (max-width:1366.98px){
-       /*specific to this page */
-    main{
+/* specific media rules */
+
+
+/* screens for desktops and larger*/
+
+@media (min-width:1367px) {
+    /*specific to this page */
+    #mapFrame {
+        width: 45rem;
+        height: 30rem;
+    }
+}
+
+
+/* screens for laptops upto desktops*/
+
+@media (min-width:1024px) and (max-width:1366.98px) {
+    /*specific to this page */
+    main {
         margin-bottom: 1.3rem;
     }
-    #mapFrame{
+    #mapFrame {
         width: 30rem;
-        height:20rem;
-    }
- }
-
- /* tablet screems wider than 600px in landscape mode - upto laptop screens */
- @media (min-width:960px) and (max-width:1280px) and (orientation:landscape) {
-     /*specific styles */
-    #mapFrame{
-        width:25rem;
-        height:20rem;
-    }
- }
-
- /* tablets in portrait mode */
- @media screen and (min-width:600px) and (max-width:800px) and (orientation:portrait){
-    /* generic styles */
-    .navbar-nav{
-        background-color:  rgba(30,30,50,0.8);
-    }
-
-    #navbutton{
-        display: inline-flex;
-        height: 1.5rem;
-        margin: 0.2rem;
-        padding:0.2rem;
-        align-items: center;
-        color:white !important;
-        border: 1px solid white!important;
-        font-size:1rem;
-    }
-
-    /*specific styles */
-    #mapFrame{
-        width: 30rem;
-        height:20rem;
+        height: 20rem;
     }
 }
- 
-/* phones in landscape mode*/
-@media screen and (min-width: 568px) and (max-width:896px) and (orientation:landscape){
-    /* generic styles */
-    .navbar-nav{
-        background-color:  rgba(30,30,50,0.8);
+
+
+/* tablet screems wider than 600px in landscape mode - upto laptop screens */
+
+@media (min-width:960px) and (max-width:1280px) and (orientation:landscape) {
+    /*specific styles */
+    #mapFrame {
+        width: 25rem;
+        height: 20rem;
     }
- 
-    #navbutton{
+}
+
+
+/* tablets in portrait mode */
+
+@media screen and (min-width:600px) and (max-width:800px) and (orientation:portrait) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
         display: inline-flex;
         height: 1.5rem;
         margin: 0.2rem;
-        padding:0.2rem;
+        padding: 0.2rem;
         align-items: center;
-        color:white !important;
+        color: white !important;
         border: 1px solid white!important;
-        font-size:1rem;
+        font-size: 1rem;
     }
- 
-    .nav-link{
-        height:90%;
+    h1 {
+        font-size: 2.5px;
+    }
+    /*specific styles */
+    #mapFrame {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+
+/* phones in landscape mode*/
+
+@media screen and (min-width: 568px) and (max-width:896px) and (orientation:landscape) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
+        display: inline-flex;
+        height: 1.5rem;
+        margin: 0.2rem;
+        padding: 0.2rem;
+        align-items: center;
+        color: white !important;
+        border: 1px solid white!important;
+        font-size: 1rem;
+    }
+    .nav-link {
+        height: 90%;
         font-size: 0.9rem;
     }
- 
-    #footerContainer{
+    #footerContainer {
         position: static;
     }
- 
     /* specific to this page */
-    #mapFrame{
-        width:360px;
-        height:180px;
-        margin-bottom:.5rem;
+    #mapFrame {
+        width: 360px;
+        height: 180px;
+        margin-bottom: .5rem;
     }
-
-    #p2l2r1{
-        margin-top:1rem;
+    #p2l2r1 {
+        margin-top: 1rem;
         margin-bottom: 2rem;
     }
 }
+
 
 /* phones in portrait mode*/
-@media screen and (min-width:280px) and (max-width:480px) and (orientation:portrait){
-    /* generic styles */
-    .navbar-nav{
-        background-color:  rgba(30,30,50,0.8);
-    }
 
-    #navbutton{
+@media screen and (min-width:280px) and (max-width:480px) and (orientation:portrait) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
         display: inline-flex;
         height: 1.5rem;
-        margin:0.2 rem;
-        padding:0.2rem;
+        margin: 0.2 rem;
+        padding: 0.2rem;
         align-items: center;
-        color:white !important;
+        color: white !important;
         border: 1px solid white!important;
         font-size: 1rem;
     }
-
-    h1{
+    h1 {
         font-size: 1.5rem;
-        font-weight: 800;
     }
-
-    #mobile{
-        font-size:1rem;
+    #logo {
+        width: 4rem;
+        height: 4rem;
     }
-
-    #company{
-        font-size:0.7rem;
+    #mobile {
+        font-size: 1rem;
     }
-
-   /* specific to this page */
-   #mapCol{
-        margin-top:.5rem;
+    #company {
+        font-size: 0.7rem;
     }
-
-    #mapFrame{
-        width:250px;
-        height:350px;
-        margin-bottom:.75rem;
+    /* specific to this page */
+    #mapCol {
+        margin-top: .5rem;
     }
-
-   #p2l2r1{
-        margin-top:.5rem;
+    #mapFrame {
+        width: 250px;
+        height: 350px;
+        margin-bottom: .75rem;
+    }
+    #p2l2r1 {
+        margin-top: .5rem;
         margin-bottom: 3.5rem;
-        padding:.75rem;
+        padding: .75rem;
     }
 }
+
 
 /* surface duo resolution: 540 x 720 - landscape*/
+
 @media screen and (min-width:720px) and (max-height:720px) and (min-height:540px) and (max-height:540px) and (orientation:landscape) {
     /* generic styles */
-    .navbar-nav{
-       background-color:  rgba(30,30,50,0.8);
-   }
-
-   #navbutton{
-       display: inline-flex;
-       height: 1.5rem;
-       margin: 0.2rem;
-       padding:0.2rem;
-       align-items: center;
-       color:white !important;
-       border: 1px solid white!important;
-       font-size:1rem;
-   }
-
-   .nav-link{
-       height:90%;
-       font-size: 0.9rem;
-   }
-
-   #footerContainer{
-       position: static;
-   }
-
-    /*specific styles */
-    #mapFrame{
-        width:25rem;
-        height:20rem;
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
     }
-}
-
-/* surface duo resolution: 540 x 720 - portrait*/
-@media screen and (min-width:540px) and (min-height:720px) and (orientation:portrait){
-       /* generic styles */
-       .navbar-nav{
-        background-color:  rgba(30,30,50,0.8);
-    }
-
-    #navbutton{
-        display: inline-flex;
-        height: 1.5rem;
-        margin:0.2 rem;
-        padding:0.2rem;
-        align-items: center;
-        color:white !important;
-        border: 1px solid white!important;
-        font-size: 1rem;
-    }
-
-    h1{
-        font-size: 1.5rem;
-        font-weight: 800;
-    }
-
-       /*specific styles */
-       #mapFrame{
-        width: 30rem;
-        height:20rem;
-    }
-}
-
-/* galaxy fold - 280 x 653  - landscape */
-@media screen and (min-width:653px) and (max-width:653px) and (min-height:280px) and (max-height:280px) and (orientation:landscape){
-    /* generic styles */
-    .navbar-nav{
-        background-color:  rgba(30,30,50,0.8);
-    }
-    
-    #navbutton{
+    #navbutton {
         display: inline-flex;
         height: 1.5rem;
         margin: 0.2rem;
-        padding:0.2rem;
+        padding: 0.2rem;
         align-items: center;
-        color:white !important;
+        color: white !important;
         border: 1px solid white!important;
-        font-size:1rem;
+        font-size: 1rem;
     }
-    
-    .nav-link{
-        height:90%;
+    .nav-link {
+        height: 90%;
         font-size: 0.9rem;
     }
-    
-    #footerContainer{
+    #footerContainer {
         position: static;
     }
-
-     /* specific to this page */
-     #mapFrame{
-        width:360px;
-        height:180px;
-        margin-bottom:.5rem;
+    /*specific styles */
+    #mapFrame {
+        width: 25rem;
+        height: 20rem;
     }
+}
 
-    #p2l2r1{
-        margin-top:1rem;
+
+/* surface duo resolution: 540 x 720 - portrait*/
+
+@media screen and (min-width:540px) and (min-height:720px) and (orientation:portrait) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
+        display: inline-flex;
+        height: 1.5rem;
+        margin: 0.2 rem;
+        padding: 0.2rem;
+        align-items: center;
+        color: white !important;
+        border: 1px solid white!important;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    /*specific styles */
+    #mapFrame {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+
+/* galaxy fold - 280 x 653  - landscape */
+
+@media screen and (min-width:653px) and (max-width:653px) and (min-height:280px) and (max-height:280px) and (orientation:landscape) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
+        display: inline-flex;
+        height: 1.5rem;
+        margin: 0.2rem;
+        padding: 0.2rem;
+        align-items: center;
+        color: white !important;
+        border: 1px solid white!important;
+        font-size: 1rem;
+    }
+    .nav-link {
+        height: 90%;
+        font-size: 0.9rem;
+    }
+    #footerContainer {
+        position: static;
+    }
+    /* specific to this page */
+    #mapFrame {
+        width: 360px;
+        height: 180px;
+        margin-bottom: .5rem;
+    }
+    #p2l2r1 {
+        margin-top: 1rem;
         margin-bottom: 2rem;
     }
 }
 
-/* galaxy fold 280 x 653 - portrait */
-@media screen and (min-width:280px) and (min-height:653px) and (orientation:portrait){
-    #mapFrame{
-        width:200px;
-        height:250px;
-        margin-bottom:.75rem;
-    }
 
-    #mobile{
-        font-size:0.9rem;
+/* galaxy fold 280 x 653 - portrait */
+
+@media screen and (min-width:280px) and (min-height:653px) and (orientation:portrait) {
+    #mapFrame {
+        width: 200px;
+        height: 250px;
+        margin-bottom: .75rem;
+    }
+    #mobile {
+        font-size: 0.9rem;
+    }
+    #logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    h1 {
+        font-size: 1.25rem;
     }
 }
-
