@@ -145,14 +145,14 @@ footer {
 
 #footer_phone {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     margin:0px;
     padding:0px;
 }
 
 #copyright {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin:0px;
     padding:0px;
 }
@@ -183,7 +183,7 @@ footer {
 
 /* specific media rules */
 /* screens for desktops and larger*/
-@media (min-width:1367.01px)
+@media (min-width:1367px)
 {
     div#headContent p, div#p2l2r2c1 li{
         font-size: 1.3rem;
@@ -191,7 +191,7 @@ footer {
  }
 
  /* screens for laptops upto desktops*/
- @media (min-width:1024.01px) and (max-width:1367px){
+ @media (min-width:1024px) and (max-width:1366.98px){
     /* specific to this page */
     #p2l2r2{
         margin-bottom:4rem;
@@ -202,12 +202,12 @@ footer {
     }
  }
 
- /* tablet screems wider than 769px in landscape mode - upto laptop screens */
- @media (min-width: 769px) and (max-width: 1024px) {
+ /* tablet screems wider than 600px in landscape mode - upto laptop screens */
+ @media (min-width:960px) and (max-width:1280px) and (orientation:landscape) {
  }
 
  /* tablets in portrait mode */
- @media screen and (min-width: 414.01px) and (max-width: 1024px) and (orientation:portrait){
+ @media screen and (min-width:600px) and (max-width:800px) and (orientation:portrait){
      /* generic styles */
     .navbar-nav{
         background-color:  rgba(30,30,50,0.8);
@@ -224,10 +224,6 @@ footer {
         font-size:1rem;
     }
 
-    #footer_phone, #copyright{
-        justify-content: center;
-     }
-
      /* specific to this page */
     #p2l2r2c1{
         margin-top:1.5rem;
@@ -235,7 +231,7 @@ footer {
 }
  
 /* phones in landscape mode*/
-@media screen and (min-width: 321px) and (max-width:869px) and (max-height:414px) and (orientation:landscape){
+@media screen and (min-width: 568px) and (max-width:896px) and (orientation:landscape){
     /* generic styles */
     .navbar-nav{
         background-color:  rgba(30,30,50,0.8);
@@ -261,10 +257,6 @@ footer {
         position: static;
     }
  
-    #footer_phone, #copyright{
-        justify-content: center;
-     }
-
      /*specific to this page */
     #p2l2r2{
         margin-bottom:4rem;
@@ -276,7 +268,7 @@ footer {
 }
 
 /* phones in portrait mode*/
-@media screen and (min-width:320px) and (max-width:414px) and (orientation:portrait){
+@media screen and (min-width:280px) and (max-width:480px) and (orientation:portrait){
     /* generic styles */
     .navbar-nav{
         background-color:  rgba(30,30,50,0.8);
@@ -298,6 +290,14 @@ footer {
         font-weight: 800;
     }
 
+    #mobile{
+        font-size:1rem;
+    }
+
+    #company{
+        font-size:0.7rem;
+    }
+
    /* specific to this page */
     #p2l2r2{
         margin-bottom:4rem;
@@ -313,3 +313,111 @@ footer {
         padding:0rem;
     }
 }
+
+/* surface duo resolution: 540 x 720 - landscape*/
+@media screen and (min-width:720px) and (max-height:720px) and (min-height:540px) and (max-height:540px) and (orientation:landscape) {
+    /* generic styles */
+    .navbar-nav{
+       background-color:  rgba(30,30,50,0.8);
+   }
+
+   #navbutton{
+       display: inline-flex;
+       height: 1.5rem;
+       margin: 0.2rem;
+       padding:0.2rem;
+       align-items: center;
+       color:white !important;
+       border: 1px solid white!important;
+       font-size:1rem;
+   }
+
+   .nav-link{
+       height:90%;
+       font-size: 0.9rem;
+   }
+
+   #footerContainer{
+       position: static;
+   }
+
+    /* specific to this page */
+    #p2l2r2c1{
+        margin-top:1.5rem;
+    }
+
+}
+
+/* surface duo resolution: 540 x 720 - portrait*/
+@media screen and (min-width:540px) and (min-height:720px) and (orientation:portrait){
+       /* generic styles */
+       .navbar-nav{
+        background-color:  rgba(30,30,50,0.8);
+    }
+
+    #navbutton{
+        display: inline-flex;
+        height: 1.5rem;
+        margin:0.2 rem;
+        padding:0.2rem;
+        align-items: center;
+        color:white !important;
+        border: 1px solid white!important;
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    /* specific to this page */
+    #p2l2r2c1{
+        margin-top:1.5rem;
+    }
+}
+
+/* galaxy fold - 280 x 653  - landscape */
+@media screen and (min-width:653px) and (max-width:653px) and (min-height:280px) and (max-height:280px) and (orientation:landscape){
+    /* generic styles */
+    .navbar-nav{
+        background-color:  rgba(30,30,50,0.8);
+    }
+    
+    #navbutton{
+        display: inline-flex;
+        height: 1.5rem;
+        margin: 0.2rem;
+        padding:0.2rem;
+        align-items: center;
+        color:white !important;
+        border: 1px solid white!important;
+        font-size:1rem;
+    }
+    
+    .nav-link{
+        height:90%;
+        font-size: 0.9rem;
+    }
+    
+    #footerContainer{
+        position: static;
+    }
+
+   /*specific to this page */
+   #p2l2r2{
+       margin-bottom:4rem;
+    }
+
+    #p2l2r2c1{
+        margin-top:1.5rem;
+    }
+     
+}
+
+/* galaxy fold 280 x 653 - portrait */
+@media screen and (min-width:280px) and (min-height:653px) and (orientation:portrait){
+    #mobile{
+        font-size:0.9rem;
+    }
+}
+
