@@ -27,8 +27,12 @@ window.addEventListener('DOMContentLoaded', () => {
         /*get the id of the current card*/
         const currentCardId=parseInt(currentCard.id,10);
         /* check in which device/media this was called*/
-        if ((window.matchMedia('(min-width:320px) and (max-width:414px) and (orientation:portrait)').matches)
-        ||  (window.matchMedia('(min-width: 415px) and (max-width: 1023.98px) and (orientation:portrait)').matches)) {
+        if (
+            (window.matchMedia('(min-width:320px) and (max-width:480px) and (orientation:portrait)').matches)
+        ||  (window.matchMedia('(min-width: 600px) and (max-width: 800px) and (orientation:portrait)').matches)
+        || (window.matchMedia('(min-width:1024px)  and (min-height:1366px) and (orientation:portrait)').matches)
+        || (window.matchMedia('(min-width:280px) and (max-width:319.98px) and (min-height:653px) and (orientation:portrait)').matches)    
+        ) {
             /* phones or tablets in portrait - set modal  display */
              /* for tablets in portrait mode set modal display */
                 /* update modal body */
@@ -39,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 /* show modal */
                 cardModalInstance.toggle();
         }
-        else if (window.matchMedia('(min-width: 321px) and (max-width:869px) and (max-height:414px) and (orientation:landscape)').matches)
+        else if (window.matchMedia('(min-width: 568px) and (max-width:869px) and (orientation:landscape)').matches)
         {
             /* for phones in landscape mode set modal display */
             /* update modal body */

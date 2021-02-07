@@ -17,6 +17,7 @@ h1 {
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: auto;
+    text-align: center;
 }
 
 h2 {
@@ -190,6 +191,12 @@ footer {
 
 /*card styling*/
 
+#cardRow{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -224,7 +231,26 @@ footer {
 
 /* tablet screems wider than 600px in landscape mode - upto laptop screens */
 
-@media (min-width:960px) and (max-width:1280px) and (orientation:landscape) {}
+@media (min-width:960px) and (max-width:1280px) and (orientation:landscape) {
+    /* generic styles */
+    .navbar-nav {
+        background-color: rgba(30, 30, 50, 0.8);
+    }
+    #navbutton {
+        display: inline-flex;
+        height: 1.5rem;
+        margin: 0.2rem;
+        padding: 0.2rem;
+        align-items: center;
+        color: white !important;
+        border: 1px solid white!important;
+        font-size: 1rem;
+    }
+    .nav-link {
+        height: 90%;
+        font-size: 0.9rem;
+    }
+}
 
 
 /* tablets in portrait mode */
@@ -243,9 +269,6 @@ footer {
         color: white !important;
         border: 1px solid white!important;
         font-size: 1rem;
-    }
-    h1 {
-        font-size: 2.5px;
     }
     /* styles specific to this page*/
     .modalImage {
@@ -274,10 +297,12 @@ footer {
     .nav-link {
         height: 90%;
         font-size: 0.9rem;
+    } 
+
+    h1{
+        font-size:2.3rem;
     }
-    h1 {
-        font-size: 2.3rem;
-    }
+
     #footerContainer {
         position: static;
     }
@@ -299,7 +324,7 @@ footer {
 
 /* phones in portrait mode*/
 
-@media screen and (min-width:280px) and (max-width:480px) and (orientation:portrait) {
+@media screen and (min-width:320px) and (max-width:480px) and (orientation:portrait) {
     /* generic styles */
     .navbar-nav {
         background-color: rgba(30, 30, 50, 0.8);
@@ -314,8 +339,8 @@ footer {
         border: 1px solid white!important;
         font-size: 1rem;
     }
-    h1 {
-        font-size: 1.5rem;
+    h1{
+        font-size:2.3rem;
     }
     #logo {
         width: 4rem;
@@ -367,6 +392,9 @@ footer {
     #footerContainer {
         position: static;
     }
+    h1{
+        font-size:2.3rem;
+    }
 }
 
 
@@ -387,8 +415,8 @@ footer {
         border: 1px solid white!important;
         font-size: 1rem;
     }
-    h1 {
-        font-size: 1.5rem;
+    h1{
+        font-size:2.3rem;
     }
     /* styles specific to this page*/
     .modalImage {
@@ -421,12 +449,18 @@ footer {
     #footerContainer {
         position: static;
     }
+
+    /*specific to this page*/
+    .modalImage{
+        height: 125px;
+        width: 200px;
+    }
 }
 
 
 /* galaxy fold 280 x 653 - portrait */
 
-@media screen and (min-width:280px) and (min-height:653px) and (orientation:portrait) {
+@media screen and (min-width:280px) and (max-width:319.98px) and (min-height:653px) and (orientation:portrait) {
     #mobile {
         font-size: 0.9rem;
     }
@@ -434,12 +468,13 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
     }
-    h1 {
-        font-size: 1.25rem;
+    h1{
+        font-size:2rem;
     }
     /*styles specific to this page */
-    .modalImage {
-        display: none;
+    .modalImage{
+        height: 125px;
+        width: 200px;
     }
     .modal h2 {
         font-size: 1.1rem;
