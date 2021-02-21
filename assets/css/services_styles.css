@@ -13,11 +13,12 @@ body {
 }
 
 h1 {
-    font-family: 'stcaiyunregular', sans-serif;
+    font-family: 'kandal', sans-serif;
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+    color: rgb(202, 4, 5);
 }
 
 h2 {
@@ -191,8 +192,8 @@ footer {
 
 /*card styling*/
 
-#cardRow{
-    display:flex;
+#cardRow {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -297,12 +298,10 @@ footer {
     .nav-link {
         height: 90%;
         font-size: 0.9rem;
-    } 
-
-    h1{
-        font-size:2.3rem;
     }
-
+    h1 {
+        font-size: 2.3rem;
+    }
     #footerContainer {
         position: static;
     }
@@ -339,8 +338,8 @@ footer {
         border: 1px solid white!important;
         font-size: 1rem;
     }
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
     #logo {
         width: 4rem;
@@ -392,8 +391,8 @@ footer {
     #footerContainer {
         position: static;
     }
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
 }
 
@@ -415,8 +414,8 @@ footer {
         border: 1px solid white!important;
         font-size: 1rem;
     }
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
     /* styles specific to this page*/
     .modalImage {
@@ -449,9 +448,8 @@ footer {
     #footerContainer {
         position: static;
     }
-
     /*specific to this page*/
-    .modalImage{
+    .modalImage {
         height: 125px;
         width: 200px;
     }
@@ -468,11 +466,11 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
     }
-    h1{
-        font-size:2rem;
+    h1 {
+        font-size: 2rem;
     }
     /*styles specific to this page */
-    .modalImage{
+    .modalImage {
         height: 125px;
         width: 200px;
     }

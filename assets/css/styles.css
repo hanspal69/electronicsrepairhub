@@ -13,11 +13,12 @@ body {
 }
 
 h1 {
-    font-family: 'stcaiyunregular', sans-serif;
+    font-family: 'kandal', sans-serif;
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+    color: rgb(202, 4, 5);
 }
 
 h2 {
@@ -303,11 +304,15 @@ footer {
 
 
 /* tablets in portrait mode */
+
+
 /* ipad pro */
-@media screen and (min-width:1024px)  and (min-height:1366px) and (orientation:portrait) {
-}
+
+@media screen and (min-width:1024px) and (min-height:1366px) and (orientation:portrait) {}
+
 
 /* all others */
+
 @media screen and (min-width:600px) and (max-width:800px) and (orientation:portrait) {
     /* generic styles */
     .navbar-nav {
@@ -322,7 +327,6 @@ footer {
         color: white !important;
         border: 1px solid white !important;
     }
-
     /* specific to this page */
     .rc {
         height: 16rem;
@@ -363,10 +367,9 @@ footer {
     #footerContainer {
         position: static;
     }
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
-
     /* specific to this page */
     .rc {
         height: 16rem;
@@ -408,11 +411,9 @@ footer {
         width: 4rem;
         height: 4rem;
     }
-
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
- 
     /* specific to this page */
     #p1r2cAc2 {
         margin-top: 1rem;
@@ -463,8 +464,8 @@ footer {
     #footerContainer {
         position: static;
     }
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
     /* specific to this page */
     .rc {
@@ -487,6 +488,7 @@ footer {
 
 
 /* surface duo resolution: 540 x 720 - portrait*/
+
 @media screen and (min-width:540px) and (min-height:720px) and (orientation:portrait) {
     /* generic styles */
     .navbar-nav {
@@ -502,11 +504,9 @@ footer {
         border: 1px solid white!important;
         font-size: 1rem;
     }
-
-    h1{
-        font-size:2.3rem;
+    h1 {
+        font-size: 2.3rem;
     }
-
     /* specific to this page */
     #p1r2cAc2 {
         margin-top: 1rem;
@@ -526,7 +526,9 @@ footer {
     }
 }
 
+
 /* galaxy fold - 280 x 653  - landscape */
+
 @media screen and (min-width:653px) and (max-width:653px) and (min-height:280px) and (max-height:280px) and (orientation:landscape) {
     /* generic styles */
     .navbar-nav {
@@ -575,13 +577,12 @@ footer {
     #mobile {
         font-size: 0.9rem;
     }
-
-    #logo{
+    #logo {
         width: 3.5rem;
         height: 3.5rem;
     }
-    h1{
-        font-size:2rem;
+    h1 {
+        font-size: 2rem;
     }
     /* specific to this page */
     #p1r2cAc2 {
